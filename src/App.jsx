@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from 'react';
-import {BrowserRouter, Route, Routes} from "react-router-dom";
+import {BrowserRouter, HashRouter, Route, Routes} from "react-router-dom";
 import './App.css'
 
 import NavigationBar from './components/NavigationBar'
@@ -35,7 +35,7 @@ function App() {
 
     return(
         <>
-            <BrowserRouter>
+            <HashRouter>
                 <NavigationBar/>
                 <Routes>
 
@@ -76,7 +76,7 @@ function App() {
 
                 </Routes>
                 <Footer/>
-            </BrowserRouter>
+            </HashRouter>
 
             <ExpandedImage
                 expandImage={setExpandedView}
