@@ -1,0 +1,25 @@
+.Portfolio{
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.galleryWrapper{
+    column-count: 3;
+    column-gap: 10px;
+}
+
+.galleryImg {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    break-inside: avoid;
+    transition: transform .2s;
+}
+
+.galleryImg:hover{
+    cursor: pointer;
+    filter: brightness(75%);
+}
